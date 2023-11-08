@@ -4,7 +4,7 @@ class CallCenter {
 	}
 
 	sayHello() {
-	  console.log(`Hello, this is ${this.name}`);
+	  console.log(`Hello this is ${this.name}`);
 	}
 
 	callMeLater(delay) {
@@ -14,10 +14,17 @@ class CallCenter {
 	}
   }
 
-  // Example usage:
-  const callCenterInstance = new CallCenter("Customer Support");
-  callCenterInstance.sayHello(); // Output: Hello, this is Customer Support
-  callCenterInstance.callMeLater(2000); // Calls sayHello() after a 2-second delay
+ //Example 1:
+
+  let judy = new CallCenter("Judy");
+  judy.sayHello();         // prints "Hello this is Judy"
+  judy.callMeLater(1000);  // waits one second then prints "Hello this is Judy"
+
+  //Example 2:
+
+  let melan = new CallCenter("Melan");
+  melan.sayHello();        // prints "Hello this is Melan"
+  melan.callMeLater(1000); // waits one second then prints "Hello this is Melan"
 
 /*****************************************************************************/
 /***************** DO NOT MODIFY ANYTHING UNDER THIS LINE ********************/
