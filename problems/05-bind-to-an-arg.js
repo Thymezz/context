@@ -1,5 +1,11 @@
 function bindToAnArg(func, arg) {
-  // Your code here 
+  return function(...args) {
+    return func(arg, ...args);
+  }
+
+  // return function() {
+  //   return func(arg, ...arguments);
+  // }
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
